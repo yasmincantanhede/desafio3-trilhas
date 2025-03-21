@@ -38,7 +38,7 @@ if (documentoInput) { // Verifica se o elemento existe na página
       if (documentoInput.files.length > 0) {
         uploadDocumento.textContent = documentoInput.files[0].name; // Exibe o nome do arquivo
       } else {
-        uploadDocumento.textContent = 'Clique aqui para selecionar o arquivo'; // Volta ao texto padrão
+        uploadDocumento.textContent = 'Clique aqui para selecionar o arquivo'; // Volta pro texto padrão
       }
     });
 }
