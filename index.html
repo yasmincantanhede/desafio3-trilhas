@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Seção do formulário -->
         <div class="form-section">
             <a href="#" class="voltar">← Voltar</a>
             <h1>Formulário de inscrição</h1>
@@ -18,14 +17,12 @@
                 <h2>Informações do participante</h2>
 
                 <label for="nome">Nome completo</label>
-                <!-- <input type="text" id="nome" value="Daiane Silva" class="valid"> -->
                 <input type="text" id="nome" value="">
 
                 <label for="data-nascimento">Data de nascimento</label>
                 <input type="date" id="data-nascimento" value=" ">
 
                 <label for="cpf">CPF</label>
-                <!-- <input type="text" id="cpf" value="123.456.789-00"> -->
                 <input type="text" id="cpf" name="cpf" maxlength="14">
 
                 <label for="sexo">Sexo</label>
@@ -36,17 +33,15 @@
                 </select>
 
                 <label for="email">E-mail</label>
-                <!-- <input type="email" id="email" class="erro" value="daianesilva">
-                <span class="mensagem-erro">⚠ Insira um e-mail válido</span> -->
+                
                 <input type="email" id="email" name="email">
                 <span id="mensagem-erro" style="color: #DC2626; display: none;" class="mensagem-erro"></span>
 
                 <label for="telefone">Telefone</label>
-                <!-- <input type="tel" id="telefone" value=" "> -->
                 <input type="text" id="telefone" name="telefone" maxlength="15">
 
                 <label for="documento">Documento de identidade</label>
-                <!-- <div class="upload-box">Clique aqui para selecionar o arquivo</div> -->
+
                 <div class="upload-documento" onclick="document.getElementById('documento').click();">
                     Clique aqui para selecionar o arquivo
                 </div>
@@ -54,13 +49,13 @@
 
                 <h2>Endereço residencial</h2>
                 <label for="cep">CEP</label>
-                <!-- <input type="text" id="cep" value=" "> -->
+
                 <input type="text" id="cep" name="cep" maxlength="9">
 
                 <div class="endereco-group">
                     <div>
                         <label for="rua">Rua</label>
-                        <!-- <input type="text" id="rua" value="Rua 1" class="rua"  disabled> -->
+
                         <input type="text" id="rua" name="rua" class="rua" disabled>
                     </div>
                     <div>
@@ -72,31 +67,21 @@
                 <div class="endereco-group">
                     <div>
                         <label for="cidade">Cidade</label>
-                        <!-- <input type="text" id="cidade" value="São Luís" class="cidade" disabled>  -->
                         <input type="text" id="cidade" name="cidade" class="cidade" disabled>
                     </div>
                     <div>
                         <label for="uf">UF</label>
-                        <!-- <input type="text" id="uf" value="MA" class="uf" disabled> -->
                         <input type="text" id="uf" name="uf" class="uf" disabled>
                     </div>
                 </div>
 
                 <label for="comprovante">Comprovante de residência</label>
-                <!-- <div class="upload-box">Clique aqui para selecionar o arquivo</div> -->
                 <div class="upload-comprovante" onclick="document.getElementById('comprovante').click();">
                     Clique aqui para selecionar o arquivo
                 </div>
                 <input type="file" id="comprovante" name="comprovante">
 
                 <h2>Trilhas de aprendizagem</h2>
-                <!-- <div class="trilhas">
-                    <div class="trilha selecionada"> <img src="./assets/front-end.png"> Programação Front-end</div>
-                    <div class="trilha"> <img src="./assets/icon-back.png"> Programação Back-end</div>
-                    <div class="trilha"> <img src="./assets/icon-jogos.png"> Programação de Jogos</div>
-                    <div class="trilha"> <img src="./assets/ux.png"> Design e Experiência</div>
-                    <div class="trilha"> <img src="./assets/dados.png"> Ciência de Dados</div>
-                </div> -->
 
                 <div class="trilhas">
                     <div class="trilha" data-trilha="front-end">
@@ -134,7 +119,6 @@
             </form>
         </div>
 
-        <!-- Seção da imagem -->
         <div class="imagem-section">
             <img src="./assets/Ilustration.png">
             <img src="./assets/logo-trilhas-inova.png">

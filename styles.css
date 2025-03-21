@@ -71,14 +71,7 @@ label {
     color: #57534E;
     margin: 10px 0 5px;
 }
-/*
-.valid {
-    border: 2px solid #F3541C;
-    border-radius: 8px;
-    box-shadow: 0px 0px 0px 4px #FEE7D6;
-    outline: none;
-}
-*/
+
 input, select {
     width: 100%;
     padding: 10px;
@@ -89,20 +82,10 @@ input, select {
 }
 
 input:focus, select:focus, textarea:focus {
-    outline: 2px solid #F3541C; /* Adiciona uma borda vermelha ao redor do campo */
-    box-shadow: 0 0 5px #FEE7D6; /* Adiciona uma sombra vermelha sutil */
+    outline: 2px solid #F3541C; 
+    box-shadow: 0 0 5px #FEE7D6; 
 }
-/*
-.upload-box {
-    width: 100%;
-    padding: 15px;
-    border: 2px dashed #ccc;
-    text-align: center;
-    color: #888;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-*/
+
 .upload-documento, .upload-comprovante {
     width: 100%;
     padding: 15px;
@@ -114,7 +97,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 #documento, #comprovante {
-    display: none; /* Oculta o campo de entrada de arquivo padrão */
+    display: none; 
 }
 
 .endereco-group {
@@ -149,12 +132,7 @@ input:focus, select:focus, textarea:focus {
 .endereco-group div {
     flex: 1;
 }
-/*
-.erro {
-    border: 2px solid #DC2626;
-    border-radius: 8px;
-}
-*/
+
 .mensagem-erro {
     font-family: 'Poppins', sans-serif;
     color: #DC2626;
@@ -191,7 +169,6 @@ input:focus, select:focus, textarea:focus {
 }
 
 .checkbox {
-    /*justify-content: flex-start;*/
     display: flex;
     align-items: center;
     margin-top: 10px;
