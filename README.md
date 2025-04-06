@@ -1,6 +1,3 @@
-Claro! Aqui está um modelo de README para o seu projeto de **Sistema de Inscrição Interativo**, seguindo todos os pontos que você mencionou:
-
----
 
 # 📝 Sistema de Inscrição Interativo
 
