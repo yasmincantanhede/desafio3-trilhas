@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             document.getElementById("uf").value = data.uf || "";
                         } else {
                             alert("CEP não encontrado.");
+                            document.getElementById("cep").value = "";
                         }
                     })
                     .catch(() => alert("Erro ao buscar o CEP."));
@@ -99,71 +100,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 this.classList.add("selecionada");
             });
         });
-    }
-
-    // Validação final do formulário antes do envio
-    if (form) {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault();
-            let isValid = true;
-
-            // Validar Nome
-            const nome = document.getElementById("nome").value.trim();
-            if (!nome) {
-                alert("O nome é obrigatório.");
-                isValid = false;
-            }
-
-            // Validar Data de Nascimento
-            const dataNascimento = document.getElementById("data-nascimento").value;
-            if (!dataNascimento) {
-                alert("A data de nascimento é obrigatória.");
-                isValid = false;
-            }
-
-            // Validar CPF (11 dígitos numéricos)
-            if (cpfInput && cpfInput.value.replace(/\D/g, "").length !== 11) {
-                alert("CPF inválido. Verifique o número digitado.");
-                isValid = false;
-            }
-
-            // Validar E-mail
-            if (emailInput && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
-                alert("E-mail inválido.");
-                isValid = false;
-            }
-
-            // Validar Telefone (11 dígitos numéricos)
-            if (telefoneInput && telefoneInput.value.replace(/\D/g, "").length !== 11) {
-                alert("Telefone inválido. Use o formato (XX) XXXXX-XXXX.");
-                isValid = false;
-            }
-
-            // Validar CEP (8 dígitos numéricos)
-            if (cepInput && cepInput.value.replace(/\D/g, "").length !== 8) {
-                alert("CEP inválido.");
-                isValid = false;
-            }
-
-            // Validar seleção de trilha
-            const trilhaSelecionada = document.querySelector(".trilha.selecionada");
-            if (!trilhaSelecionada) {
-                alert("Selecione uma trilha de aprendizagem.");
-                isValid = false;
-            }
-
-            // Validar checkbox dos Termos
-            const termosCheckbox = document.getElementById("termos");
-            if (!termosCheckbox.checked) {
-                alert("Você precisa aceitar os Termos e Condições.");
-                isValid = false;
-            }
-
-            if (isValid) {
-                alert("Formulário enviado com sucesso!");
-                form.submit();
-            }
-        });
-        
     }
 });
